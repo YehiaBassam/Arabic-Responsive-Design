@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body dir="rtl">
+
+  <div class="bg-white shadow d-flex justify-content-center"  id="mynav" style="z-index: 999999;">
+    <nav class="navbar navbar-expand-lg navbar-dark " >
+      <a class="navbar-brand ml-lg-5 text-black" href="#"><i class="fas fa-plane-departure pl-2 "></i>زاد المسافر</a>
+      <button class="navbar-toggler  bg-warning " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+    
+      <div class="collapse navbar-collapse mr-lg-5 "  id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active links_nav">
+            <a class="nav-link ml-2" href="./index.html">الرئيسية</a>
+          </li>
+          <li class="nav-item links_nav">
+              <a class="nav-link ml-2" href="#">التقارير</a>
+            </li>
+            <li class="nav-item links_nav">
+              <a class="nav-link ml-2" href="#">الاخبار</a>
+            </li>
+            <li class="nav-item links_nav">
+              <a class="nav-link ml-2" href="#">المعالم السياحية</a>
+            </li>
+            <li class="nav-item links_nav">
+              <a class="nav-link ml-2" href="#">المواضيع</a>
+            </li>
+            <li class="nav-item links_nav">
+              <a class="nav-link ml-2" href="#">المطويات</a>
+            </li>
+            <li>
+              <a href="#"><button type="button" class="btn btn-warning mr-3 my-1 ml-2 text-white">تقرير جديد</button></a>
+            </li>
+            <li>
+              <a href="./login.html"><button type="button" class="btn btn-outline-warning ml-2 my-1 text-black-50">تسجيل الدخول</button></a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+    </div>
+
+
+    <div class="m-auto bg-white container" id="registration" align="right">
+        <div class="row">
+            <div class="col-5 col-md-6 d-flex flex-column">
+                <h3 class="ml-auto py-3">إنشاء حساب جديد</h3>
+                <form id="myform_1" action="/" method="POST">
+                    <input type="text" name="name" id="name" placeholder="الاسم بالكامل*" class="mb-3 form-control" required>
+                    <input type="email" name="email" id="email" placeholder="ادخل عنوان البريد الإلكتروني*" class="mb-3 form-control" required>
+                    <input type="text" name="mobile" id="mobile" placeholder="رقم التليفون*" class="mb-3 form-control" required>
+                    <input type="password" name="password" id="password" placeholder="كلمة المرور*" class="mb-3 form-control" required>
+                    <input type="text" name="birthday" id="birthday" placeholder="تاريخ الميلاد" onfocus="(this.type='date')" class="mb-3 form-control"><br>
+                    <button type="submit" class=" btn btn-warning btn-lg btn-block p-0 text-white" id="register_button" ><p>إنشاء حساب</p></button>
+                </form>
+                <div class="mt-2"><h6 id="error" class="text-danger"></h6></div>
+            </div>
+            <center><div class="vl"></div></center>
+            <div class="col-5 text-center my-3">
+                <h4>لديك حساب بالفعل</h4>
+                <button type="submit" class=" btn btn-outline-warning btn-lg btn-block text-balck my-3"><p id="registration_p">تسجيل الدخول</p></button>
+                <p>أو</p>
+                <a href="#"><i class="fab fa-facebook  ml-3 fa-3x" id="fb"></i></a>
+                <a href="#"><i class="fab fa-twitter-square text-primary ml-3 fa-3x"></i></a>
+                <a href="#"><i class="fab fa-google-plus text-danger ml-3 fa-3x" ></i></a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center mt-5 container-fluid text-white">
+      <div class="row">
+      <div class="col-md-12 pt-4">
+          <p>هناك العديد من المعالم السياحية في مصر التى تتمتع بشهرة عالمية وشعبية كبيرة لدى السياح من جميع انحاء العالم </p>
+      </div>
+      <div class="col-md-12">
+          <p>هناك العديد من المعالم السياحية في مصر التى تتمتع بشهرة عالمية وشعبية كبيرة       </p>
+      </div>
+      <div class="col-md-6">
+          <h6><b>التليفون : </b><span>01119282182  &nbsp&nbsp&nbsp 01119282182</span></h6>
+      </div>
+      <div class="col-md-6">
+          <h6><b>الإيميل : </b><span>yehia@gmail.com</span></h6>
+
+      </div>
+
+      <div class="col-md-12 py-3">
+          <a href="#" class="ml-2"><i class="fab fa-facebook ml-3 fa-2x" id="fb"></i></a>
+          <a href="#" class="ml-2"><i class="fab fa-twitter-square text-primary ml-3 fa-2x"></i></a>
+          <a href="#"><i class="fab fa-google-plus text-danger ml-3 fa-2x" ></i></a>
+      </div>
+  </div>
+  </footer>
+
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12 text-center" style="background-color: #1f7b08;">
+              <p>	Made by Yehia Bassam &copy;</p>
+          </div>
+      </div>
+  </div>
+
+
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <script src="js/script.js"></script>
+</body>
+</html>
